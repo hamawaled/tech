@@ -1,0 +1,696 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500&display=swap');
+
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styling for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9FAFB;
+}
+
+/* Header Container */
+.header-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the header container */
+.header-container {
+    position: absolute;
+    width: 90%;
+    margin: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the header logo */
+.header-logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Styling for header links */
+.header-links a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Styling for header text */
+.header-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+/* Styling for quote text in header */
+.header-text .quote-text {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Styling for specific parts of the quote text */
+.header-text .quote-text .span-text {
+    color: #FF0000;
+}
+
+.header-text .quote-text .yoda-text {
+    font-size: 14px;
+}
+
+/* Styling for hero buttons in header */
+.header-text .hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual hero buttons */
+.header-text .hero-btns div {
+    padding: 16px;
+}
+
+.header-text .hero-btns div button {
+    padding: 12px 44px;
+    background-color: #FF0000;
+    color: white;
+    font-size: 24px;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+/* Hover effect for hero buttons */
+.header-text .hero-btns div button:hover {
+    background-color: #ce0b0b;
+}
+
+
+/* General styling for the sections container */
+.sections-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+/* Styling for the container title */
+.container-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container-title h2 {
+    background-color: rgba(255, 0, 0, 0.02);
+    color: #FF0000; /* Red color for the title */
+    border-radius: 12px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin: auto;
+    border: 1px solid rgba(255, 0, 0, 0.03)
+
+}
+
+/* Styling for the resource content */
+.resource-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Styling for each resource card */
+.resource-card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    position: relative;
+}
+
+/* Border styles for resource cards */
+.border-right {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-left {
+    border-right: 2px solid rgba(93, 92, 92, 0.1);
+}
+
+.border-top {
+    border-top: 2px solid rgba(93, 92, 92, 0.1);
+}
+
+.border-bottom {
+    border-bottom: 2px solid rgba(93, 92, 92, 0.1);
+}
+
+/* Styling for the "Coming Soon" tag on resource cards */
+.coming-soon-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 0, 0, 0.02);
+    color: #FF0000;
+    border: 1px solid rgba(255, 0, 0, 0.03);
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    transform: scale(0.8);
+    transform-origin: top left;
+}
+
+/* Styling for the icon on resource cards */
+.resource-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-right: 10px;
+    align-self: flex-start;
+    color: #FF0000; /* Red color for the icon */
+}
+
+/* Styling for the text on resource cards */
+.resource-card-text {
+    width: 70%;
+}
+
+.resource-card-text h3 {
+    color: #08112F; /* Dark blue color for headings */
+}
+
+.resource-card-text p {
+    margin-bottom: 20px;
+    color: rgb(80, 76, 76); /* Dark gray color for text */
+}
+
+/* Styling for links within the text on resource cards */
+.resource-card-text a svg {
+    color: #08112F; /* Dark blue color for link icons */
+}
+
+
+/* Resource Footer Button Styles */
+.resource-footer button {
+    margin-top: 20px;
+    padding: 14px 46px;
+    background-color: rgba(255, 0, 0, 0.02);
+    color: #FF0000; /* Red color for the title */
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 0, 0, 0.03);
+    border-radius: 12px;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+/* Hover effect for the Resource Footer Button */
+.resource-footer button:hover {
+    background-color: rgba(255, 0, 0, 0.07);
+}
+
+/* Smart Section Styles */
+.smart-content {
+    /* Full width and centering content horizontally and vertically */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smart-content-sides {
+    /* 90% width and grid layout with two columns */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.smart-content-first-side-card {
+    /* Flex layout for card content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.smart-content-first-side-card-text {
+    /* Align text at the start of the container */
+    align-self: flex-start;
+}
+
+.smart-content-first-side-card-text h2 {
+    /* Heading color and margin */
+    color: #08112F;
+    margin-bottom: 10px;
+}
+
+.smart-content-first-side-card-text p {
+    /* Text color and margin */
+    color: rgb(80, 76, 76);
+    margin-bottom: 20px;
+}
+
+.smart-content-first-side-card-text span {
+    /* Styling for a highlighted span within the text */
+    color: #e03b3b;
+    background-color: #FCF2F4;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.smart-content-first-side-card-img img {
+    /* Image styling */
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 16px;
+}
+
+/* Video Content Styles */
+.video-content,
+.blogs-content {
+    /* 90% width and flex layout for responsiveness */
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.video-card {
+    /* Margin around video cards */
+    margin: 10px;
+}
+
+.video-card video {
+    /* Video styling */
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* Blogs Container Styles */
+.blogs-content {
+    /* Grid layout for responsive blog cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.blogs-card {
+    /* Styling for individual blog cards */
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blogs-card-img img {
+    /* Image styling within blog cards */
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.blogs-card-text {
+    /* Padding for text content within blog cards */
+    padding: 20px;
+}
+
+.blogs-card-text-header {
+    /* Flex layout for the header of blog cards */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.blogs-card-text-header-details {
+    /* Flex layout for details within the header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.blogs-card-text-header-details-text {
+    /* Align text at the start within the header details */
+    align-self: flex-start;
+}
+
+.blogs-card-text h2 {
+    /* Heading color and margin */
+    color: #08112F;
+    margin-bottom: 10px;
+}
+
+.blogs-card-text a {
+    /* Link styling within blog cards */
+    color: #11182e;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+
+/* Contact Container */
+.contact-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+/* Background Image Overlay */
+.contact-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Purple\ Modern\ 3D\ Virtual\ Reality\ Metaverse\ Presentation\ \(3\).gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg); /* Adjust the angle as needed */
+}
+
+/* Contact Content Styles */
+.contact-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Join Us Text Styles */
+.join-us-content-text {
+    align-self: flex-start;
+}
+
+/* Join Us Text Span Styles */
+.join-us-content-text span {
+    padding: 6px 10px;
+    font-size: 26px;
+    color: #e03b3b;
+    background-color: rgba(255, 0, 0, 0.02);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 0, 0, 0.03);
+}
+
+/* Join Us Inputs Styles */
+.join-us-content-inputs {
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.45);
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    backdrop-filter: blur(6px);
+}
+
+/* Join Us Text Heading Styles */
+.join-us-content-text h1 {
+    margin: 14px 0 20px 0;
+    color: #08112F;
+}
+
+/* Join Us Form Styles */
+.join-us-content-inputs form {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Join Us Form Input Styles */
+.join-us-content-inputs form input {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid #D8DADE;
+    border-radius: 4px;
+    padding: 0 8px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/* Join Us Form Button Styles */
+.join-us-content-inputs form button {
+    margin-top: 20px;
+    padding: 12px 42px;
+    width: 100%;
+    background-color: #FF0000;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.join-us-content-inputs form button:hover {
+    background-color: #ce0b0b;
+}
+
+/* Footer Section */
+footer {
+    padding: 30px 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #0B0F0E 0%, #313131 100%);
+}
+
+/* Footer Content Styles */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Footer Section Styles */
+.footer-section {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Footer Heading Styles */
+.footer h3 {
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Footer Paragraph Styles */
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Footer Unordered List Styles */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* Footer Anchor Styles */
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Footer Anchor Hover Styles */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Copy Paragraph Styles */
+.footer-copy p {
+    text-align: center;
+}
+
+
+/* Chat Container Styles */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Chat Icon Styles */
+.chat-icon {
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
+
+.chat-icon svg {
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.chat-icon:hover + .chat-menu,
+.chat-menu:hover {
+    display: block;
+}
+
+/* Chat Menu Styles */
+.chat-menu {
+    width: 300px;
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Chat Menu Items Styles */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.menu-items svg {
+    color: #FF0000;
+}
+
+.menu-items-text {
+    align-items: flex-end;
+    margin-left: 30px;
+}
+
+
+/* Media Query */
+@media only screen and (max-width: 1180px) {
+    .footer-section {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .resource-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .smart-content-sides {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .smart-content-first-side-card {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .smart-content-first-side-card-text p {
+        width: 100% !important;
+    }
+
+    .video-card {
+        margin: 30px !important;
+    }
+
+    .video-card video {
+        /* Video styling */
+        width: 100%;
+    }
+
+    .contact-container {
+        height: 100vh;
+    }
+
+    .contact-content {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        margin-top: 50px !important;
+    }
+
+    .join-us-content-inputs{
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .resource-card {
+        height: 280px;
+    }
+
+    .resource-card-icon {
+        align-self: flex-start;
+    }
+    .resource-card-text {
+        align-self: flex-start;
+    }
+}
+
+
+
